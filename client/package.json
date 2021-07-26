@@ -1,0 +1,88 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "description": "React Flask City Tours",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pashamakhilkumarreddy/react-flask-city-tours"
+  },
+  "author": {
+    "name": "Pasham Akhil Kumar Reddy",
+    "email": "pashamakhilkumarreddy@gmail.com",
+    "url": "https://github.com/pashamakhilkumarreddy/react-flask-city-tours"
+  },
+  "contributors": [
+    {
+      "name": "Pasham Akhil Kumar Reddy",
+      "email": "pashamakhilkumarreddy@gmail.com",
+      "url": "https://github.com/pashamakhilkumarreddy/react-flask-city-tours"
+    }
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/pashamakhilkumarreddy/react-flask-city-tours",
+  "bugs": "https://github.com/pashamakhilkumarreddy/react-flask-city-tours",
+  "keywords": [
+    "React",
+    "Redux",
+    "JSS"
+  ],
+  "dependencies": {
+    "@rebass/forms": "^4.0.6",
+    "@rebass/preset": "^4.0.5",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "axios": "^0.21.1",
+    "prop-types": "^15.7.2",
+    "ramda": "^0.27.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-helmet-async": "^1.0.9",
+    "react-icons": "^4.2.0",
+    "react-jss": "^10.7.1",
+    "react-redux": "^7.2.4",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "4.0.3",
+    "rebass": "^4.0.7",
+    "redux": "^4.1.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-persist": "^6.0.0",
+    "redux-thunk": "^2.3.0",
+    "theme-ui": "^0.10.0",
+    "web-vitals": "^1.1.2"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "engineStrict": false,
+  "engines": {
+    "node": "v14.17.2",
+    "npm": "7.19.1"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1",
+    "redux-logger": "^3.0.6"
+  }
+}

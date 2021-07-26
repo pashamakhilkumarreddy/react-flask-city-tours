@@ -1,1 +1,1 @@
-# react-flask-city-tours
+# React Flask City Tours Application
