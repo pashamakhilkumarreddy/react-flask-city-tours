@@ -1,12 +1,12 @@
-import { Box, Button, Text } from "theme-ui";
-import { Label, Input } from "@rebass/forms";
-import { useReducer } from "react";
-import { loginUser } from "../../store/actions/authActions";
-import { authReducer } from "../../utils/helpers";
+import { Box, Button, Text } from 'theme-ui';
+import { Label, Input } from '@rebass/forms';
+import { useReducer } from 'react';
+import { loginUser } from '../../store/actions/authActions';
+import { authReducer } from '../../utils/helpers';
 
 const initialState = {
-  email: "",
-  password: "",
+  email: '',
+  password: '',
 };
 
 const Login = () => {
@@ -36,7 +36,7 @@ const Login = () => {
       <Text
         sx={{
           fontSize: 4,
-          fontWeight: "bold",
+          fontWeight: 'bold',
         }}
       >
         Login

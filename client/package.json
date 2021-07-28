@@ -27,6 +27,16 @@
     "Redux",
     "JSS"
   ],
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "lint": "eslint src/* --ext .jsx --ext .js",
+    "lint:fix": "eslint src/* --ext .jsx,.js --fix",
+    "lint:dry": "eslint src/* --ext .jsx,.js --fix-dry-run",
+    "format": "prettier \"./src/**/*.+(jsx|js|ts|tsx|json)\" --write",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
   "dependencies": {
     "@rebass/forms": "^4.0.6",
     "@rebass/preset": "^4.0.5",
@@ -47,16 +57,25 @@
     "rebass": "^4.0.7",
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
+    "redux-logger": "^3.0.6",
     "redux-persist": "^6.0.0",
     "redux-thunk": "^2.3.0",
     "theme-ui": "^0.10.0",
     "web-vitals": "^1.1.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "eslint": "^7.31.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.1",
+    "lint-staged": "^11.1.1",
+    "node-sass": "^6.0.1",
+    "prettier": "^2.3.2"
   },
   "engineStrict": false,
   "engines": {
@@ -81,8 +100,21 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    "node-sass": "^6.0.1",
-    "redux-logger": "^3.0.6"
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,.jsx,.ts,.tsx}": [
+      "npm run lint:fix",
+      "npx prettier --write",
+      "git add"
+    ],
+    "*.json": [
+      "npm run lint:fix",
+      "npx prettier --write",
+      "git add"
+    ]
   }
 }

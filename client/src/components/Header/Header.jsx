@@ -1,15 +1,15 @@
-import { Flex, Text, Box, Link } from "rebass";
-import { createUseStyles } from "react-jss";
-import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { Flex, Text, Box, Link } from 'rebass';
+import { createUseStyles } from 'react-jss';
+import { NavLink } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const useStyles = createUseStyles({
   header: {
-    borderBottom: `1px solid #fdfdfd`,
+    borderBottom: '1px solid #fdfdfd',
     boxShadow: '0 0 4px 4px rgba(0, 0, 0, 0.1)',
     '&& a': {
-      textDecoration: 'none'
-    }
+      textDecoration: 'none',
+    },
   },
 });
 

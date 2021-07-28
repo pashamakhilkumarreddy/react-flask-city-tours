@@ -1,3 +1,3 @@
-import SEORoute from "./SEORoute";
+import SEORoute from './SEORoute';
 
 export default SEORoute;

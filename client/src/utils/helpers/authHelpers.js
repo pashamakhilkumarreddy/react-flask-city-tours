@@ -1,19 +1,22 @@
-import { clone } from "ramda";
+import { clone } from 'ramda';
 
-export const authReducer = (state, action) => {
+// prettier-ignore
+export const authReducer = (state, action) => { // eslint-disable-line import/prefer-default-export
   switch (action.type) {
-    case "EMAIL":
-      const emailState = clone({
+    case 'EMAIL': {
+      const updatedState = clone({
         ...state,
         email: action.payload,
       });
-      return emailState;
-    case "PASSWORD":
-      const passwordState = clone({
+      return updatedState;
+    }
+    case 'PASSWORD': {
+      const updatedState = clone({
         ...state,
         password: action.payload,
       });
-      return passwordState;
+      return updatedState;
+    }
     default:
       return state;
   }

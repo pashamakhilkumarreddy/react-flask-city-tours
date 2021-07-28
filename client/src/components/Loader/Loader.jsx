@@ -1,7 +1,3 @@
-const Loader = () => {
-  return (
-    <div>Loader</div>
-  )
-}
+const Loader = () => <div>Loader</div>;
 
 export default Loader;

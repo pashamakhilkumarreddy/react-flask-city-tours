@@ -1,6 +1,6 @@
-import { Redirect } from "react-router-dom";
-import PropTypes from "prop-types";
-import Auth from "../Auth";
+import { Redirect } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import Auth from '../Auth';
 
 const ProtectedRoute = ({ component, render, ...props }) => {
   const Component = component || render;
@@ -16,7 +16,6 @@ const ProtectedRoute = ({ component, render, ...props }) => {
 ProtectedRoute.propTypes = {
   component: PropTypes.any,
   render: PropTypes.any,
-  props: PropTypes.any,
 };
 
 export default ProtectedRoute;

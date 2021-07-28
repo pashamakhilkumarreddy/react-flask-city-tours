@@ -1,5 +1,5 @@
-import config from "../config";
-import Api from "./Api";
+import config from '../config';
+import Api from './Api';
 
 const { REGISTER, LOGIN, LOGOUT } = config;
 

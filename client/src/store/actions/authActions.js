@@ -1,5 +1,5 @@
-import { REGISTER_USER, LOGIN_USER, LOGOUT_USER } from "../constants";
-import AuthService from "../../services/AuthenticationService";
+import { REGISTER_USER, LOGIN_USER, LOGOUT_USER } from '../constants';
+import AuthService from '../../services/AuthenticationService';
 
 export function registerUser({ email, password }) {
   return async (dispatch) => {

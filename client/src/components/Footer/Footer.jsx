@@ -1,12 +1,12 @@
-import { Flex, Text } from "rebass";
-import { createUseStyles } from "react-jss";
+import { Flex, Text } from 'rebass';
+import { createUseStyles } from 'react-jss';
 
 const useStyles = createUseStyles({
   footer: {
-    position: "absolute",
-    width: "100vw",
-    bottom: "-6rem",
-    borderTop: "1px solid #ddd",
+    position: 'absolute',
+    width: '100vw',
+    bottom: '-6rem',
+    borderTop: '1px solid #ddd',
   },
 });
 

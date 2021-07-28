@@ -1,1 +1,1 @@
-export * from "./authHelpers";
+export * from './authHelpers';

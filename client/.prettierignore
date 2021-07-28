@@ -1,0 +1,13 @@
+build/
+dist/
+node_modules/
+public/
+.git
+.gitignore
+.npmrc
+.nvmrc
+.prettierrc
+README.md
+package.json
+package-lock.json
+.vscode

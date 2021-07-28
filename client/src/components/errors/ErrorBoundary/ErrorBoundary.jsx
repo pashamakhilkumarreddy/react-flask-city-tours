@@ -1,14 +1,14 @@
-import { Component } from "react";
-import PropTypes from "prop-types";
+import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class ErrorBoundary extends Component {
   state = {
     hasError: false,
   };
 
-  static defaultProps = {
-    fallback: "Something went wrong",
-  };
+  // static defaultProps = {
+  //   fallback: 'Something went wrong',
+  // };
 
   static getDerivedStateFromError(err) {
     console.error(err);
@@ -22,11 +22,12 @@ class ErrorBoundary extends Component {
   }
 
   render() {
-    if (this.state.hasError) {
-      return <Error msg={this.props.fallback} />;
-    } else {
-      return this.props.children;
+    const { hasError } = this.state;
+    const { fallback, children } = this.props;
+    if (hasError) {
+      return <Error msg={fallback} />;
     }
+    return children;
   }
 }
 
@@ -40,6 +41,11 @@ Error.propTypes = {
 
 ErrorBoundary.propTypes = {
   fallback: PropTypes.string,
+  children: PropTypes.any,
+};
+
+ErrorBoundary.defaultProps = {
+  fallback: 'Something went wrong',
 };
 
 export default ErrorBoundary;

@@ -1,5 +1,5 @@
-import { clone } from "ramda";
-import { REGISTER_USER, LOGIN_USER, LOGOUT_USER } from "../constants";
+import { clone } from 'ramda';
+import { REGISTER_USER, LOGIN_USER, LOGOUT_USER } from '../constants';
 
 const initialState = {
   isLoggedIn: false,
@@ -9,28 +9,32 @@ const initialState = {
 
 export default function authReducer(state = initialState, action) {
   switch (action.type) {
-    case REGISTER_USER:
-      const registerState = clone({
+    case REGISTER_USER: {
+      const updatedState = clone({
         ...state,
         isLoggedIn: true,
         user: action.payload.user,
         tokens: action.payload.tokens,
       });
-      return registerState;
-    case LOGIN_USER:
-      const loginState = clone({
+      return updatedState;
+    }
+    case LOGIN_USER: {
+      const updatedState = clone({
         ...state,
         isLoggedIn: true,
         user: action.payload.user,
         tokens: action.payload.tokens,
       });
-      return loginState;
-    case LOGOUT_USER:
-      const logoutState = clone({
+      return updatedState;
+    }
+    case LOGOUT_USER: {
+      const updatedState = clone({
         ...initialState,
       });
-      return logoutState;
-    default:
+      return updatedState;
+    }
+    default: {
       return state;
+    }
   }
 }
